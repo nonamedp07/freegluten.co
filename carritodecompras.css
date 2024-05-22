@@ -1,0 +1,185 @@
+.cuerpo{
+    background-color: #f5ebd4;
+    font-family: 'Poppins', sans-serif;
+}
+.barradenavegacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    animation-timeline: scroll();
+    animation-range: 0 200px;
+    z-index: 10;
+    background-color: #f5ebd4;
+    border-bottom: 1px solid #a05c1c;
+}
+.links{
+    text-decoration: none;
+    color: #935115;
+    justify-content: space-between;
+}
+.links:hover{
+    color: #a05c1c;
+    font-weight: bold;
+}
+.buycar{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.logobuycar{
+    height: 35px;
+    width: 40px;
+}
+.botoniniciarsesion{
+    background-color: #714212;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+}
+.botoniniciarsesion:hover{
+    background-color: #884f17;
+}
+.botoniniciarsesion:visited{
+    color: white;
+}
+.marca{
+    display: flex;
+    align-items: center;
+    
+}
+.logonav{
+    height: 75px;
+    width: 100px;
+    object-fit:contain;
+    object-position: center;
+}
+.subpaginas{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+
+.pago{
+    display: grid;
+    grid-template-areas: 
+    "espaciocarro espacioformulario"
+    ;
+}
+.espaciocarro{
+    background-color: #935115;
+}
+.titproductos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+.subcarro{
+    color: white;
+    font-size: 20px;
+}
+.imgproducto{
+    width: 100px;
+    height: 100px;
+}
+.precioproducto{
+    color: #FF914D;
+    font-size: 20px;
+}.subprecio{
+    display: flex;
+    align-items: center;
+}
+.imgtrash{
+    height: 50px;
+    width: 50px;
+}
+.product{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    color: white;
+}
+.itemproduct{
+    display: flex;
+    align-items: center;
+}
+.piedepagina{
+    background-color: #FFFAEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+}
+.parrafo_footer{
+    width: 500px;
+    text-align: center;
+    font-size: 18px;
+}
+.imginsta{
+    height: 45px;
+    width: 45px;
+}
+
+@media (max-width:750px){
+    .subpaginas{
+        width: 300px;
+    }
+}
+@media (max-width:550px){
+    .barradenavegacion{
+        gap: 10px;
+    }
+    .subpaginas{
+        width: 250px;
+        gap: 20px;
+    }
+    .logonav{
+        height: 50px;
+        width: 75px;
+    }
+    .logobuycar{
+        height: 25px;
+        width: 30px;
+    }
+}
+
+@media  (max-width:1000px) {
+    .propositos{
+        grid-template-areas:
+        "mision"
+        "vision"
+        "valores";
+    ;
+    width: 300px;
+    }
+}
+
+@media (max-width:750px) {
+    .piedepagina{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .parrafo_footer{
+        width: 350px;
+    }
+}
+@media (max-width:515px) {
+    .parrafo_footer{
+        width: 250px;
+    }
+}
